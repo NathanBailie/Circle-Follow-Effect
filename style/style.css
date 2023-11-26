@@ -5,10 +5,14 @@
     font-family: sans-serif;
 }
 
+:root {
+	--page-bg: #fbf9e1;
+}
+
 body {
 	width: 100vw;
 	height: 100vh;
-	background: #fbf9e1;
+	background: var(--page-bg);
 }
 
 .container {

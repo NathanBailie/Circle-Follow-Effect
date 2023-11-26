@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: #edece2;
+}
+
+.container {
+	position: fixed;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+}
+
+.followEffect {
+    width: 60px;
+	height: 60px;
+	position: relative;
+	border-radius: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 100;
+}
+
+.followEffect div {
+    width: 100%;
+	height: 100%;
+	position: absolute;
+    border: 4px solid rgba(0,0,0,.3);
+	border-radius: 50%;
+	animation-name: colorCircles;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes colorCircles {
+    0%, 100% {
+        border-color: rgba(255, 165, 0, 0.5);
+    }
+    10% {
+        border-color: rgba(155, 155, 39, 0.5);
+    }
+    20% {
+        border-color: rgba(0, 128, 0, 0.5);
+    }
+    30% {
+        border-color: rgba(35, 118, 146, 0.5);
+    }
+    40% {
+        border-color: rgba(128, 0, 128, 0.5);
+    }
+    50% {
+        border-color: rgba(42, 112, 136, 0.5);
+    }
+    60% {
+        border-color: rgba(0, 0, 255, 0.5);
+    }
+    70% {
+        border-color: rgba(148, 0, 211, 0.5);
+    }
+    80% {
+        border-color: rgba(255, 0, 0, 0.5);
+    }
+    90% {
+        border-color: rgba(255, 0, 0, 0.5);
+    }
+}
+
+.followEffect div:nth-child(1) {
+	z-index: 10;
+	animation-delay: 0s;
+}
+
+.followEffect div:nth-child(2) {
+	z-index: 9;
+	animation-delay: 0.1s;
+}
+
+.followEffect div:nth-child(3) {
+	z-index: 8;
+	animation-delay: 0.2s;
+}
+
+.followEffect div:nth-child(4) {
+	z-index: 7;
+	animation-delay: 0.3s;
+}
+
+.followEffect div:nth-child(5) {
+	z-index: 6;
+	animation-delay: 0.4s;
+}
+
+.followEffect div:nth-child(6) {
+	z-index: 5;
+	animation-delay: 0.5s;
+}
+
+.followEffect div:nth-child(7) {
+	z-index: 4;
+	animation-delay: 0.6s;
+}
+
+.followEffect div:nth-child(8) {
+	z-index: 3;
+	animation-delay: 0.7s;
+}
+
+.followEffect div:nth-child(9) {
+	z-index: 2;
+	animation-delay: 0.8s;
+}
+
+.followEffect div:nth-child(10) {
+	z-index: 1;
+	animation-delay: 0.9s;
+}
